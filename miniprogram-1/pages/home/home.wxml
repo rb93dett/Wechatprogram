@@ -1,0 +1,75 @@
+<!--pages/home/home.wxml-->
+<image src="../../icons/home_bg.png" style="height:500rpx;"></image>
+
+<view class="layer1">
+  <!--旧衣捐赠-->
+  <view class="cloth">
+    <view class="top">
+      <view class="title">
+        旧衣捐赠
+      </view>
+      <view class="button">
+        <text>点击查看</text>
+      </view>
+    </view>
+    <view class="bottom">
+      旧衣服不要扔鸭，让它继续给需要的人带来温暖吧
+    </view>
+  </view>
+  <!--二手共享-->
+  <view class="thing">
+    <view class="top">
+      <view class="title">
+        二手共享
+      </view>
+      <view class="button">
+        <text>点击查看</text>
+      </view>
+    </view>
+    <view class="bottom">
+      好物分享，传递快乐，让幸福遍布我们的校园
+    </view>
+  </view>
+</view>
+
+<view class="layer2">
+  <!--书籍传承-->
+  <view class="book">
+    <view class="top">
+      <view class="title">
+        书籍传承
+      </view>
+      <view class="button">
+        <text>点击查看</text>
+      </view>
+    </view>
+    <view class="bottom">
+      有温度的书籍，在一代代学子间，传承下去
+    </view>
+  </view>
+  <!--二手共享-->
+  <view class="box">
+    <view class="top">
+      <view class="title">
+        快递盒子
+      </view>
+      <view class="button">
+        <text>点击查看</text>
+      </view>
+    </view>
+    <view class="bottom">
+      快递盒子不要扔，环保回收做校园绿色达人
+    </view>
+  </view>
+</view>
+
+<view class="Swiper">
+  <swiper autoplay indicator-dots circular>
+    <swiper-item wx:for="{{SwiperList}}">
+      <navigator>
+        <image style="height=350rpx" src="{{item.img}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+

@@ -1,0 +1,42 @@
+<!--消息通知栏-->
+<view class="MsgMenu">
+  <view class="TextBar"> 
+    <view class="Msg {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+    私信
+      <!--气泡提示-->
+      <view class='bubble'>
+        <view class='num'>3</view>
+      </view>
+    </view>
+    <view class="Notice {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+    通知
+      <!--气泡提示-->
+      <view class='bubble'>
+        <view class='num'>9</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--消息列表-->
+<view class="MSG">
+  <view class="MSGList" wx:for="{{MsgList}}">
+    <view class="item">
+      <view class="head">
+        <image src="{{item.head}}" style="width:110rpx; height:110rpx;"></image>
+      </view>
+      <view class="info">
+        <view class="ListDetail">
+          <view class="name"> {{item.name}} </view>
+          <view class="time"> {{item.time}} </view>
+        </view>
+        <view class="ListContent">
+          <view class="msg"> {{item.msg}} </view>
+          <view class="bubble2"> 
+            <view class="num">{{item.num}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

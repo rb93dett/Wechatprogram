@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/find/find",
+    "pages/msg/msg",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8aeab1",
+    "navigationBarTitleText": "Re in School",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#6e6e6e",
+    "selectedColor":"#000",
+    "borderStyle":"white",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/home_x.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "icons/find.png",
+        "selectedIconPath": "icons/find_x.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "消息",
+        "iconPath": "icons/msg.png",
+        "selectedIconPath": "icons/msg_x.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "icons/me.png",
+        "selectedIconPath": "icons/me_x.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

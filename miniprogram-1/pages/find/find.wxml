@@ -1,0 +1,54 @@
+<view class="Swiper">
+  <swiper autoplay indicator-dots circular>
+    <swiper-item wx:for="{{SwiperList}}">
+      <navigator>
+        <image style="height=350rpx" src="{{item.img}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="module">
+  <view class="part">
+    <view class="icon">
+      <image style="width:60rpx; height:60rpx;" src="../../icons/bbs.png"></image>
+    </view>
+    <text>校园论坛</text>
+  </view>
+  <view class="part">
+    <view class="icon">
+      <image style="width:60rpx; height:60rpx;" src="../../icons/activity.png"></image>
+    </view>
+    <text>热门活动</text>
+  </view>
+  <view class="part">
+    <view class="icon">
+      <image style="width:60rpx; height:60rpx;" src="../../icons/welfare.png"></image>
+    </view>
+    <text>积分兑换</text>
+  </view>
+  <view class="part">
+    <view class="icon">
+      <image style="width:60rpx; height:60rpx;" src="../../icons/love.png"></image>
+    </view>
+    <text>爱心回馈</text>
+  </view>  
+</view>
+
+<view class="hottalk">
+  <view class="title">热门话题</view>
+  <view class="talklist" wx:for="{{TalkList}}">
+    <view class="listitem">
+      <view class="left">
+        <view class="itemtitle">{{item.title}}</view>
+        <view class="iteminfo">
+          <view class="count">{{item.count}}浏览量</view>
+          <view class="date">{{item.date}}</view>
+        </view>
+      </view>
+      <view class="right">
+        <image src="{{item.img}}" style="width:130rpx; height:130rpx;"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,119 @@
+page{
+  background-color: #f5f5f5;
+}
+
+/* 消息通知栏 */
+.MSG{
+}
+
+.MsgMenu{
+  background-color: #fff;
+  border-top: 30rpx solid #fff;
+  border-bottom: 5rpx solid #f5f5f5;
+}
+
+.MsgMenu .TextBar{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height: 70rpx;
+}
+
+.Msg, .Notice{
+  color:#CDCDCD;
+  padding: 0rpx 40rpx;
+  font-size: 35rpx;
+}
+
+.active{
+  color:#4074DD;
+  border-bottom: 5rpx solid #4074DD;
+}
+
+/*气泡框样式*/
+.bubble{
+  display: flex;
+  background-color: #4074DD;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  position: relative;
+  left: 80rpx;
+  bottom: 60rpx;
+}
+.bubble .num{
+  font-size: 30rpx;
+  color:#ffffff;
+  margin-left: 9rpx;
+  margin-top: -1rpx;
+}
+
+/* 消息列表 */
+.MSGList{
+}
+
+.item{
+  background-color: #fff;
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+  border-bottom: 4rpx solid #f5f5f5;
+}
+
+.head{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.head image{
+  border-radius: 20%;
+}
+
+.info{
+  flex:4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ListDetail{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name{
+  font-size: 30rpx;
+  color: black;
+}
+
+.time{
+  color: #666;
+  font-size: 20rpx;
+}
+
+.ListContent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.msg{
+  font-size: 25rpx;
+  color: #5e5e5e;
+}
+
+.bubble2{
+  display: flex;
+  background-color: #4074DD;
+  border-radius: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.bubble2 .num{
+  font-size: 30rpx;
+  color:#ffffff;
+  margin-left: 10rpx;
+  margin-top: -1rpx;
+}

@@ -1,0 +1,22 @@
+<view class="introduction">
+  <image class="head" src= "{{UserInfo.head_img}}" mode="widthFix"></image>
+  <view class="user_info">
+    <text class="name"> {{UserInfo.name}} </text>
+    <text class="tele"> {{UserInfo.tele}} </text>
+  </view>
+  <image class="next_arrow" mode="widthFix" src="../../icons/next.png" mode="widthFix"></image>
+</view>
+
+<block wx:for="{{CenterListInfo}}">
+  <view class="CenterList">
+    <view class="ListIcon">
+      <image src="{{item.icon}}" style="width:60rpx; height:60rpx;"></image>
+    </view>
+    <view class="ListText">
+      <view> {{item.text}} </view>
+    </view>
+    <image class="ListBgImg" src="../../icons/next.png" mode="widthFix"></image>
+  </view>
+</block>
+
+<view class="logout">退出登录</view>
